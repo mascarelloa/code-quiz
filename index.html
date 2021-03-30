@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <title>Code Quiz</title>
 
-    <link rel=stylesheet href="./style.css">
+    <link rel=stylesheet href="./assets/style.css">
   </head>
 
   <body>
 
-    <div class="score"> <a href="">Highscores</a></div>
+    <div class="score"> <a href="./leaderboard.html">Highscores</a></div>
 
     <div class="timer"> Time Remaing: <span id="time">0</span></div>
 
@@ -19,7 +19,7 @@
         <div id="start-screen" class="start">
             <h1>Code Quiz</h1>
 
-            <p>This is going to be the hardest Harry Potter Quiz you have ever taken, bitch.</p>
+            <p>Javascript is hard af.</p>
 
             <button id="start">Start the Quiz</button>
 
@@ -32,7 +32,16 @@
             <div id="choices" class="choice"> </div>
        </div>
 
+       <div id="end-screen" class="hide">
+         
+         <h2>Game Over!</h2>
 
+         <p>Your final score is <span id="final-score"></span>
+          
+          Enter your initials: <input type="text" id="initials" max="3"/>
+          
+            <button id="submit">Submit</button></p>
+       </div>
 
 
 
@@ -40,8 +49,8 @@
 
 
 
-    <script src="./questions.js"></script>
-    <script src="./script.js"></script>
+    <script src="assets/questions.js"></script>
+    <script src="./assets/script.js"></script>
 
   
   </body>
