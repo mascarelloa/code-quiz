@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html>
-
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Code Quiz</title>
 
-    <link rel=stylesheet href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/reset.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Fjalla+One&family=Karla:ital,wght@0,200;0,500;0,800;1,200;1,500;1,800&family=Oswald:wght@300&family=Six+Caps&family=Source+Code+Pro:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
   <body>
+    <header>
+      <div class="score"><a href="./leaderboard.html">View Highscores</a></div>
 
-    <div class="score"> <a href="./leaderboard.html">Highscores</a></div>
-
-    <div class="timer"> Time Remaing: <span id="time">0</span></div>
+      <div class="timer">Time Remaing: <span id="time">75</span></div>
+    </header>
 
     <div class="container">
+      <div id="start-screen" class="start">
+        <img src="./assets/images/js.png" width="150px">
+        <br><br>
+        <h1>JavaScript Quiz</h1>
 
-        <div id="start-screen" class="start">
-            <h1>Code Quiz</h1>
+        <p>
+          Are you a master of JavaScript? Text your knowledge with this quiz!
+          You have 75 seconds to answer as many questions as you can! Beware,
+          for every wrong answer, the timer will decrease by 10 seconds! Good
+          luck, future developer!
+        </p>
 
-            <p>Javascript is hard af.</p>
+        <button id="start">Start the Quiz</button>
+      </div>
 
-            <button id="start">Start the Quiz</button>
+      <div id="questions" class="hide">
+        <h2 id="question-title"></h2>
 
-        </div>
+        <div id="choices" class="choice"></div> 
+      </div>
 
-        <div id="questions" class="hide">
+      <div id="correct" class="hide">
+        <h3>Yay! Correct!</h3>
+      </div>
+        
+      <div id="wrong" class="hide">
+        <h3>Oops! Wrong Answer.</h3>
+      </div>
+        
+      <div id="end-screen" class="hide">
+        <h1>Fin!</h1>
 
-            <h2 id="question-title"></h2>
-
-            <div id="choices" class="choice"> </div>
-       </div>
-
-       <div id="end-screen" class="hide">
-         
-         <h2>Game Over!</h2>
-
-         <p>Your final score is <span id="final-score"></span>
+        <p>
+          Your final score is <span id="final-score"></span> 
           
-          Enter your initials: <input type="text" id="initials" max="3"/>
-          
-            <button id="submit">Submit</button></p>
-       </div>
+          <br><br>
 
+          Enter your initials: <input type="text" id="initials" max="3" />
 
-
+          <button id="submit">Submit</button>
+        </p>
+      </div>
     </div>
-
-
 
     <script src="assets/questions.js"></script>
     <script src="./assets/script.js"></script>
-
-  
   </body>
-
-
 </html>

@@ -1,7 +1,20 @@
-.body {
-    font-family: Arial, Helvetica, sans-serif;
-    
+:root {
+    --jsyellow: #EDD718;
+    --darkgray: #333431;
+    --lightergray: #F7F7F7;
+    --lightgray: #666666;
+
 }
+
+.body {
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+a:link {
+    text-decoration: none;
+  }
 
 .hide {
     display:none;
@@ -13,13 +26,161 @@
     margin:auto;
     text-align: center;
     padding: 10px;
-    font-family:Arial, Helvetica, sans-serif;
+    margin-top:75px;
 }
 
 .choice {
     display:flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    align-items:center;
+    text-align: left;
+    align-items:left;
+    width:80%;
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:10px;
+}
+
+.choice button {
+    background-color:var(--jsyellow);
+    color: black;
+    font-weight:700;
+    font-family: Source Code Pro;
+    font-size:15px;
+    padding:5px;
+    border: 0px solid;
+    border-radius: 8px;
+  
+}
+
+.choice button:hover{
+    background-color:var(--lightgray);
+    color:white;
+    transition: 0.1s ease-in;
+}
+
+header { 
+    height:;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    height:40px;
+    background-color:var(--jsyellow);
+    padding:10px;
+    margin:0;
+}
+
+.score {
+    font-family:Fjalla One, Impact;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight:800;
+    letter-spacing: 1px;
+}
+
+.score a {
+    color:var(--darkgray)
+}
+
+.score a:hover {
+    color: white;
+    transition: 0.15s ease-in;
+}
+
+.timer {
+    font-family:Fjalla One;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    color:var(--darkgray);
+    font-weight:800;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-family:Fjalla One, Impact;
+    text-transform: uppercase;
+    font-size: 60px;
+    color:var(--darkgray);
+    font-weight:800;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-family:Fjalla One;
+    text-transform: uppercase;
+    font-size: 30px;
+    color:var(--darkgray);
+    font-weight:500;
+    letter-spacing: 0px;
+    padding:20px;
+}
+
+#correct {
+    font-family: Source Code Pro, monospace;
+    font-size:14 px;
+    font-weight:700;
+    color: green;
+    text-align:center;
+    margin-top:20x;
+}
+
+#wrong {
+    font-family: Source Code Pro, monospace;
+    font-size:14 px;
+    font-weight:700;
+    color: red;
+    text-align:center;
+    margin-top:20px;
+}
+
+p {
+    font-family:Source Code Pro, monospace;
+    font-size:15px;
+    font-weight:700;
+    text-align:justify-center; 
+    padding:10px;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+
+#start {
+   background-color:var(--jsyellow);
+   color: white;
+   font-family: Fjalla One;
+   font-size:25px;
+   padding:10px;
+   margin:10px;
+   border: 0px solid;
+   border-radius: 8px;
+   text-transform:uppercase;
+}
+
+#start:hover {
+    background-color:var(--darkgray);
+    color: white;
+    transition: .1s ease-in;
+}
+
+#end-screen button {
+    background-color:var(--jsyellow);
+    border: 0px solid;
+    border-radius:4px;
+    padding: 5px;
+    font-family:Fjalla One;
+    font-size:14px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+#end-screen button:hover { 
+    background-color:var(--lightgray);
+    color:white;
+    transition: 0.1s ease-in;
+}
+
+#initials {
+    border: 1px solid var(--jsyellow);
+    height:25px;
 }
