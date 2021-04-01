@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <!-- This is the head, which is storing all the information needed for the page (css and reset files, google fonts, and title) -->
   <head>
     <meta charset="UTF-8" />
-    <title>Code Quiz</title>
+    <title>Javascript Quiz</title>
 
     <link rel="stylesheet" href="./assets/reset.css" />
 
@@ -14,17 +15,21 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
 
-  <body>
-    <header>
-      <div class="score"><a href="./leaderboard.html">View Highscores</a></div>
+  <body> 
+    <!-- This is the header at the top of the page, it contains the timer and the link to view high scores.
+      -->
+      <header>
+      <div class="score"><a href="./highscores.html">View Highscores</a></div>
 
       <div class="timer">Time Remaing: <span id="time">75</span></div>
     </header>
 
+    <!-- This is the main section holding everything.  -->
     <div class="container">
+      <!-- This is the start screen. -->
       <div id="start-screen" class="start">
-        <img src="./assets/images/js.png" width="150px">
-        <br><br>
+        <img src="./assets/images/js.png" width="150px" />
+        <br /><br />
         <h1>JavaScript Quiz</h1>
 
         <p>
@@ -37,35 +42,45 @@
         <button id="start">Start the Quiz</button>
       </div>
 
+      <!-- This is the question screen.  -->
       <div id="questions" class="hide">
         <h2 id="question-title"></h2>
 
-        <div id="choices" class="choice"></div> 
+        <div id="choices" class="choice"></div>
       </div>
 
       <div id="correct" class="hide">
         <h3>Yay! Correct!</h3>
       </div>
-        
+
       <div id="wrong" class="hide">
         <h3>Oops! Wrong Answer.</h3>
       </div>
-        
+
+      <!-- This is the end screen. -->
       <div id="end-screen" class="hide">
         <h1>Fin!</h1>
 
         <p>
-          Your final score is <span id="final-score"></span> 
-          
-          <br><br>
+          <big>Your final score is <span id="final-score"></span>.</big>
 
-          Enter your initials: <input type="text" id="initials" max="3" />
+          <br /><br /><br />
 
-          <button id="submit">Submit</button>
+          Enter your initials:
+          <br /><br />
+          <input type="text" id="initials" max="3" />
+          <button id="submit">Save</button>
+
+          <br /><br />
+
+          <a href="./index.html"><button id="back">Play Again</button></a>
+          <a href="./highscores.html"><button id="back">View Highscores</button></a>
         </p>
       </div>
     </div>
 
+    <!-- Link to javascripts -->
+    <script src="./assets/highscores.js"></script>
     <script src="assets/questions.js"></script>
     <script src="./assets/script.js"></script>
   </body>
