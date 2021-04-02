@@ -6,8 +6,7 @@ This is a fun quiz to test beginner developer's knowledge on javascript concepts
 
 Click the link below to play!
 
-```https://mascarelloa.github.io/code-quiz/.
-```
+https://mascarelloa.github.io/code-quiz/
 
 ## Visuals
 
