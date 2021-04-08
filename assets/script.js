@@ -14,6 +14,7 @@ var displayScore = document.querySelector("#final-Score");
 var scoreBoard = document.querySelector("#score-board");
 var scoreLink = document.querySelector("#score");
 
+
 // This will start the quiz when the Start button is clicked by making the start screen hide and the questions show.
 startButton.onclick = startQuiz;
 
@@ -99,7 +100,9 @@ function gameOver() {
   finalScore = counter;
   document.getElementById("final-score").innerHTML = finalScore;
   theTimer.textContent = counter;
-  clearInterval(timeInterval);
+  document.getElementById("time").textContent = 0;
+
+  // clearInterval(timeInterval);
 }
 
 // When the user clicks the submit button it will get the store, the user's initials, and log it to the local storage.
